@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{scroll-behavior:smooth}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none ;
+    outline: none ;
+}
+ 
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+ 
+i,
+em {
+    font-style: normal;
+}
+ 
+a:hover {
+    text-decoration: none;
+}
+ 
+html,
+ 
+ 
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;.
+    
+}
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+span {
+    display: inline-block;
+}
+ 
+p {
+    line-height: 1.65;
+}
+ 
+a,
+a:hover,
+a:focus {
+    color: inherit;
+}
+ 
+a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+/*-----------------------General START-----------------------*/
+
+.link {
+    color: rgb(69, 131, 201);
+    font-weight: 600;
+}
+
+.link:hover {
+    color: rgb(55, 103, 158);
+}
+
+.justify {
+    text-align: justify;
+}
+
+.spacer {
+    padding-top: 50px;
+}
+
+.mt20 {
+    margin-top: 20px!important;
+}
+
+.mt10 {
+    margin-top: 10px!important;
+}
+/*-----------------------General END-----------------------*/
+
+/*-----------------------Main layout START-----------------------*/
+
+body {
+    display: flex;
+    /* width: 100%; */
+}
+
+nav {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 0 5px #f5f5f5;
+    width: 20vw;
+    position: fixed;
+}
+
+.nav-spacer {
+    height: 100vh;
+    width: 20vw;
+}
+
+.content {
+    /* flex-grow: 10; sa*/
+    width: 79vw;
+}
+
+/*-----------------------Main layout END-----------------------*/
+
+/*-----------------------Nav side bar START-----------------------*/
+
+
+
+.nav-top {
+    flex-grow: 1;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.meniu-container {
+    border-bottom: 1px solid #cbd3d9;
+    border-top: 1px solid #cbd3d9;
+    flex-grow: 7;
+    padding: 20px 40px;
+}
+
+.nav-bottom {
+    flex-grow: 2;
+    padding: 20px 40px;
+}
+
+.meniu {
+    padding-top: 5vh;
+    /* padding-left: 30px; */
+}
+
+.meniu > a  {
+    display: flex;
+    padding: 5px 10px 5px 20px;
+    margin: 10px 0;
+    color: black;
+}
+
+.meniu > a:hover {
+    background-color: #f0f0f0;
+   }
+
+.meniu > a > li:target {
+background-color: #f0f0f0;
+}
+
+.svg {
+    padding-right: 15px;
+    margin-bottom: -1px;
+}
+
+.nav-contacts {
+    font-size: 14px;
+    color: #707070;
+}
+
+
+    
+
+/*-----------------------Nav side bar END-----------------------*/
+
+/*-----------------------Home START-----------------------*/
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 8;
+    height: 100vh;
+    justify-content: center;
+    gap: 15px;
+    background-color: #f9f9fb;
+}
+
+.home-img {
+    width: 20vw;
+    border-radius: 100%;
+    border: #e6e6e6 solid 10px;
+
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+/*-----------------------Home END-----------------------*/
+
+/*-----------------------Portfolio START-----------------------*/
+
+.portfolio {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 7vw;
+    gap: 50px;
+}
+
+.portfolio-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-gap: 30px;
+    grid-template-rows: minmax(500px, auto);
+}
+
+.portfolio-item {
+    box-shadow: 3px 3px 5px #f5f5f5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    box-shadow: 5px 5px 7px #e7e7e7;
+    cursor: pointer; 
+}
+
+.portfolio-img{
+    width: 14.3vw;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.tag {
+    background-color: black;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.portfolio-short-description {
+    font-size: 13px;
+}
+
+.button {
+    /* border: 1px rgba(219, 219, 219, 0.336) solid; */
+    box-shadow: 3px 3px 5px #f5f5f5;
+    width: 100px;
+    text-align: center;
+}
+
+.coming-soon {
+    background-color: red;
+    padding: 3px 10px;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    border-radius: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*-----------------------Portfolio END-----------------------*/
+
+/*-----------------------Patirtis / Experience START-----------------------*/
+
+.experience {
+    background-color: #f9f9fb;
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 7vw;
+    gap: 50px;
+}
+
+.timeline {
+    border-left: 4px solid black;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.03);
+    position: relative;
+    padding: 50px;
+    /* list-style: none; */
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto 50px auto;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    width: 50vw;
+}
+
+.event {
+    border-bottom: 1px dashed rgba(85, 85, 85, 0.205);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.event:after {
+    -webkit-box-shadow: 0 0 0 4px black;
+    box-shadow: 0 0 0 4px black;
+    left: -57px;
+    background: white;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+    position: absolute;
+    display: block;
+    
+}
+
+.event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.date {
+    margin-right: 5px;
+    padding-right: 10px;
+    border-right: 3px solid #e1e1e1;
+    color: rgb(156, 156, 156);
+    text-transform: uppercase;
+}
+
+.company {
+    margin-right: 5px;
+    padding-right: 10px;
+    color: rgb(156, 156, 156);
+    text-transform: uppercase;
+}
+
+.experience  .listas {
+    padding-top: 20px;
+    list-style: inside!important;
+}
+
+.experience  .listas > li {
+   list-style: circle!important;
+}
+
+/*-----------------------Patirtis / Experience END-----------------------*/
+
+/*-----------------------About me START-----------------------*/
+
+.about {
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 7vw;
+    gap: 50px;
+}
+
+.about-info {
+    width: 50vw;
+}
+
+/*-----------------------About me END-----------------------*/
+
+/*-----------------------Contacts START-----------------------*/
+
+.contacts {
+    width: 79vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 7vw;
+    gap: 50px;
+    background-color: #f9f9fb;
+}
+
+.contact-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-svg {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/*-----------------------Contacts END-----------------------*/
+
+/*-----------------------Project page START-----------------------*/
+
+.project-container {
+    display: flex;
+    width: 79vw;
+    padding: 10vh 7vw;
+    gap: 50px;
+}
+
+.project-info {
+    width: 50%;
+}
+
+.project-photo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-img{
+  width: 400px;
+}
+
+.back-button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+}
+/*-----------------------Project page END-----------------------*/
