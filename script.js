@@ -12,7 +12,6 @@ function page0() {
 <section class="portfolio" id="portfolio">
     <h1>Portfolio</h1>
     <div class="portfolio-items-container">
-        <!--  <a href="/projects/1.html" > -->
             <div onclick="page1()" class="portfolio-item">
                 <img class="portfolio-img" src="img/portfolio/portfolio6.jpg" alt="">
                 <p class="coming-soon">coming soon</p>
@@ -22,24 +21,24 @@ function page0() {
                     <p class="tag">HTML / CSS</p>
                 </div>
                 <h3>React projektas</h3>
-                <p class="portfolio-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <p >Plačiau...</p> 
+                <p class="portfolio-short-description">Šiuo metu mokausi „React“ biblioteką. Baigęs kursus pradėsiu kurtu „React“ projektus, kuriuos čia ir įkelsiu. Pirmas mano planuojamas projektas...</p>
+                <div class="portfolio-more">
+                    <p >Plačiau...</p>
+                </div> 
             </div>
-        <!-- </a> -->
-        <a href="#">
-            <div class="portfolio-item">
+            <div onclick="page2()" class="portfolio-item">
                 <img class="portfolio-img" src="img/portfolio/portfolio5.jpg" alt="">
                 <div class="tags">
                     <p class="tag">JS</p>
                     <p class="tag">HTML / CSS</p>
                 </div>
                 <h3>CV svetainė</h3>
-                <p class="portfolio-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <p>Plačiau...</p>
+                <p class="portfolio-short-description">Kuriant šią svetainę svarbiausia buvo paprastumas ir informacijos pateikimo aiškumas...</p>
+                <div class="portfolio-more">
+                    <p >Plačiau...</p>
+                </div>
             </div>
-        </a>
-        <a href="#">
-            <div class="portfolio-item">
+            <!-- <div onclick="page3()" class="portfolio-item">
                 <img class="portfolio-img" src="img/portfolio/portfolio1.jpg" alt="">
                 <div class="tags">
                     <p class="tag">Angular</p>
@@ -48,44 +47,46 @@ function page0() {
                 </div>
                 <h3>Darbų registravimo sistema</h3>
                 <p class="portfolio-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <p>Plačiau...</p>
-            </div>
-        </a>
-        <a href="#">
-            <div class="portfolio-item">
+                <div class="portfolio-more">
+                    <p >Plačiau...</p>
+                </div>
+            </div> -->
+            <div onclick="page4()" class="portfolio-item">
                 <img class="portfolio-img" src="img/portfolio/portfolio2.jpg" alt="">
                 <div class="tags">
                     <p class="tag">JS</p>
                     <p class="tag">HTML / CSS</p>
                 </div>
-                <h3>Testinė svetainė</h3>
-                <p class="portfolio-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <p>Plačiau...</p>
+                <h3>Bandomoji svetainė</h3>
+                <p class="portfolio-short-description">Tai pirmoji bandomoji svetainė panaudojant HTML, CSS ir JS žinias. Didžiausias dėmesys buvo skirtas išbandyti CSS animacijas „transform“ su „transition“.</p>
+                <div class="portfolio-more">
+                    <p >Plačiau...</p>
+                </div>
             </div>
-         </a>
-        <a href="#">
-            <div class="portfolio-item">
+            <div onclick="page5()" class="portfolio-item">
                 <img class="portfolio-img" src="img/portfolio/portfolio3.jpg" alt="">
                 <div class="tags">
                     <p class="tag">PHP</p>
                     <p class="tag">Wordpress</p>
                 </div>
-                <h3>Svetainė su papildomu PHP funkcionalumu </h3>
-                <p class="portfolio-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <p>Plačiau...</p>
+                <h3>Svetainė su papildomu PHP funkcionalumu</h3>
+                <p class="portfolio-short-description">Klientei kurta Wordpress svetainė su papildomu PHP funkcionalumu. Užduotis buvo...</p>
+                <div class="portfolio-more">
+                    <p >Plačiau...</p>
+                </div>
             </div>
-        </a>
-        <a href="#">
-            <div class="portfolio-item">
+            <div onclick="page6()" class="portfolio-item">
                 <img class="portfolio-img" src="img/portfolio/portfolio4.jpg" alt="">
                 <div class="tags">
                     <p class="tag">Wordpress</p>
+                    <p class="tag">CSS</p>
                 </div>
                 <h3>Wordpress svetainių pavyzdžiai</h3>
-                <p class="portfolio-short-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe corrupti nesciunt tempora ipsam praesentium neque odio consequatur velit in.</p>
-                <p>Plačiau...</p>
+                <p class="portfolio-short-description">Svetainė kurta su Wordpress, joje pateikiami klientams kurtų internetinių svetainių pavyzdžiai...</p>
+                <div class="portfolio-more">
+                    <p >Plačiau...</p>
+                </div>
             </div>
-        </a>
     </div>
 </section>
 <section class="experience" id="experience">
@@ -273,18 +274,18 @@ function page1() {
                     <p class="tag">JS</p>
                     <p class="tag">HTML / CSS</p>
                 </div>
-                <a href="#">
+                <!-- <a href="#" target="_blank">
                     <div class="github-link spacer">
                         <img src="../img/svg/github.svg" alt="" class="contact-svg">
                         <p class="link">Projekto failai</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="#" target="_blank">
                     <div class="github-link mt20">
                         <img src="../img/svg/live.svg" alt="" class="contact-svg">
                         <p class="link">Projekto peržiūra</p>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
         <div class="project-photo">
@@ -296,7 +297,170 @@ function page1() {
 function page2() {
     const content = document.getElementById("content");
     content.innerHTML = `
+    <section class="project-container">
+    <div class="project-info">
+        <a href="#portfolio" onClick="page0()">
+            <div class="back-button" >
+                <i class="arrow left"></i>
+                <p><b>Atgal</b></b></p>
+            </div>
+        </a>
+        <div class="project-description">
+            <h1 class="spacer">CV svetainė</h1>
+            <p>Kuriant šią svetainę svarbiausia buvo paprastumas ir informacijos pateikimo aiškumas. Daugiausia naudota HTML ir CSS, o navigacija tarp darbų pavyzdžių („Portfolio“) atlikta naudojant JavaScript programavimo kalbą.</p>
+            <h3 class="spacer">Naudotos programavimo kalbos</h3>
+            <div class="tags">
+                <p class="tag">JS</p>
+                <p class="tag">HTML / CSS</p>
+            </div>
+            <a href="https://github.com/Viktor-as/mycv" target="_blank">
+                <div class="github-link spacer">
+                    <img src="../img/svg/github.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto failai</p>
+                </div>
+            </a>
+            <a href="https://viktoras.info/" target="_blank">
+                <div class="github-link mt20">
+                    <img src="../img/svg/live.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto peržiūra</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="project-photo">
+        <img class="project-img" src="../img/portfolio/portfolio5.jpg" alt="">
+    </div>
+</section>
+    `
+}
 
+// Page3 angular projektas
+function page3() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+
+    `
+}
+
+function page4() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+    <section class="project-container">
+    <div class="project-info">
+        <a href="#portfolio" onClick="page0()">
+            <div class="back-button" >
+                <i class="arrow left"></i>
+                <p><b>Atgal</b></b></p>
+            </div>
+        </a>
+        <div class="project-description">
+            <h1 class="spacer">Bandomoji svetainė</h1>
+            <p>Tai pirmoji bandomoji svetainė panaudojant HTML, CSS ir JS žinias. Didžiausias dėmesys buvo skirtas išbandyti CSS animacijas „transform“ su „transition“. JavaSript naudotas klasėms pridėti tam tikrais laiko intervalais arba paspaudimo metu.</p>
+            <h3 class="spacer">Naudotos programavimo kalbos</h3>
+            <div class="tags">
+                <p class="tag">JS</p>
+                <p class="tag">HTML / CSS</p>
+            </div>
+            <a href="https://github.com/Viktor-as/food-website" target="_blank">
+                <div class="github-link spacer">
+                    <img src="../img/svg/github.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto failai</p>
+                </div>
+            </a>
+            <a href="http://food.internetiniusvetainiukurimas.lt/" target="_blank">
+                <div class="github-link mt20">
+                    <img src="../img/svg/live.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto peržiūra</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="project-photo">
+        <img class="project-img" src="../img/portfolio/portfolio_full_2.jpg" alt="">
+    </div>
+</section>
+    `
+}
+
+function page5() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+    <section class="project-container">
+    <div class="project-info">
+        <a href="#portfolio" onClick="page0()">
+            <div class="back-button" >
+                <i class="arrow left"></i>
+                <p><b>Atgal</b></b></p>
+            </div>
+        </a>
+        <div class="project-description">
+            <h1 class="spacer">Svetainė su papildomu PHP funkcionalumu</h1>
+            <p class="mt10">Klientei kurta Wordpress svetainė su papildomu PHP funkcionalumu. </p>
+            <p class="mt10">Užduotis: sukurti renginių svetainę, kur renginius vartotojas galėtų pridėti į „Wishlist“. Pridėtiems renginiams į „Wishlist“ taip pat galėtų aktyvuoti priminimą – dieną prieš renginio pradžią gautų el. laišką apie renginį. </p>
+            <p class="mt10">Kadangi tuo metu mokiausi PHP, o JavaScript dar nebuvau net pradėjęs – funkcionalumą sukūriau su PHP ir MySQL duomenų bazės pagalba.  Duomenų bazėje fiksavau koks vartotojas kokius renginius yra pamėgęs, ar aktyvavęs renginių priminimą. Serveryje aktyvavau CRON darbą, kuris paleisdavo mano kodą kiekvieną dieną ryte. Kodas tikrindavo ar ryt vyks kokie renginiai, ar yra žmonių kurie aktyvavo priminimą tam renginiu, jei taip – informaciją apie tą renginį išsiųsdavo tam asmeniui jo nurodytu el. paštu.</p>
+            <h3 class="spacer">Naudotos programavimo kalbos</h3>
+            <div class="tags">
+                <p class="tag">PHP</p>
+                <p class="tag">HTML / CSS</p>
+            </div>
+            <a href="https://github.com/Viktor-as/lecture" target="_blank">
+                <div class="github-link spacer">
+                    <img src="../img/svg/github.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto failai</p>
+                </div>
+            </a>
+            <a href="https://lecture.internetiniusvetainiukurimas.lt/" target="_blank">
+                <div class="github-link mt20">
+                    <img src="../img/svg/live.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto peržiūra</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="project-photo">
+        <img class="project-img" src="../img/portfolio/portfolio_full_3.jpg" alt="">
+    </div>
+</section>
+    `
+}
+
+function page6() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+    <section class="project-container">
+    <div class="project-info">
+        <a href="#portfolio" onClick="page0()">
+            <div class="back-button" >
+                <i class="arrow left"></i>
+                <p><b>Atgal</b></b></p>
+            </div>
+        </a>
+        <div class="project-description">
+            <h1 class="spacer">Wordpress svetainių pavyzdžiai</h1>
+            <p class="mt10">Svetainė kurta su Wordpress, joje pateikiami klientams kurtų internetinių svetainių pavyzdžiai. Dirbant su Wordpress teko naudoti daug CSS darant dizainų adaptacijas. </p>
+            <h3 class="spacer">Naudotos programavimo kalbos</h3>
+            <div class="tags">
+                <p class="tag">Wordpress</p>
+                <p class="tag">CSS</p>
+            </div>
+            <!-- <a href="#" target="_blank">
+                <div class="github-link spacer">
+                    <img src="../img/svg/github.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto failai</p>
+                </div>
+            </a> -->
+            <a href="https://internetiniusvetainiukurimas.lt/" target="_blank">
+                <div class="github-link mt20 spacer">
+                    <img src="../img/svg/live.svg" alt="" class="contact-svg">
+                    <p class="link">Projekto peržiūra</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="project-photo">
+        <img class="project-img" src="../img/portfolio/portfolio_full_4.jpg" alt="">
+    </div>
+</section>
     `
 }
 
