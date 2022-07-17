@@ -6,7 +6,7 @@ function page0() {
     <section class="home" id="home">
     <img src="img/web-dev.jpg" alt="" class="home-img">
     <h1>Viktoras Šimkevičius</h1>
-    <p style="width: 40vw; text-align: center;">Sveiki, šiuo metu ieškau Full-Stack Developer arba Front-End Developer darbo pozicijos, nes noriu savo ilgametį hobį paversti pagrindine veikla.</p>
+    <p class="home-description">Sveiki, šiuo metu ieškau Full-Stack Developer arba Front-End Developer darbo pozicijos, nes noriu savo ilgametį hobį paversti pagrindine veikla.</p>
     <a href="#portfolio"><i class="arrow down"></i></a> 
 </section>
 <section class="portfolio" id="portfolio">
@@ -230,7 +230,7 @@ function page0() {
 <section class="contacts" id="contact">
     <h1>Kontaktai</h1>
     <div>
-        <h3>Jei turite papildomų klausimų ar pasiūlymų – susisiekite su manimi.</h3>
+        <h3 class="center">Jei turite papildomų klausimų ar pasiūlymų – susisiekite su manimi.</h3>
         <div class="contact-line mt20">
             <a href="tel:+37062469512">
                 <p>+370 624 69512</p>
@@ -242,10 +242,10 @@ function page0() {
             </a>
         </div>
         <div class="contact-line mt20">
-            <a href="https://www.linkedin.com/in/viktoras-%C5%A1imkevi%C4%8Dius-7693a944/">
+            <a href="https://www.linkedin.com/in/viktoras-%C5%A1imkevi%C4%8Dius-7693a944/" target="_blank">
                 <img src="img/svg/linkedin.svg" alt="" class="contact-svg">
             </a>
-            <a href="https://github.com/Vikizz">
+            <a href="https://github.com/Viktor-as" target="_blank">
                 <img src="img/svg/github.svg" alt="" class="contact-svg">
             </a>
         </div>
@@ -262,7 +262,7 @@ function page1() {
             <a href="#portfolio" onClick="page0()">
                 <div class="back-button" >
                     <i class="arrow left"></i>
-                    <p><b>Atgal</b></b></p>
+                    <p><b>Atgal</b></p>
                 </div>
             </a>
             <div class="project-description">
@@ -302,7 +302,7 @@ function page2() {
         <a href="#portfolio" onClick="page0()">
             <div class="back-button" >
                 <i class="arrow left"></i>
-                <p><b>Atgal</b></b></p>
+                <p><b>Atgal</b></p>
             </div>
         </a>
         <div class="project-description">
@@ -350,7 +350,7 @@ function page4() {
         <a href="#portfolio" onClick="page0()">
             <div class="back-button" >
                 <i class="arrow left"></i>
-                <p><b>Atgal</b></b></p>
+                <p><b>Atgal</b></p>
             </div>
         </a>
         <div class="project-description">
@@ -390,7 +390,7 @@ function page5() {
         <a href="#portfolio" onClick="page0()">
             <div class="back-button" >
                 <i class="arrow left"></i>
-                <p><b>Atgal</b></b></p>
+                <p><b>Atgal</b></p>
             </div>
         </a>
         <div class="project-description">
@@ -432,7 +432,7 @@ function page6() {
         <a href="#portfolio" onClick="page0()">
             <div class="back-button" >
                 <i class="arrow left"></i>
-                <p><b>Atgal</b></b></p>
+                <p><b>Atgal</b></p>
             </div>
         </a>
         <div class="project-description">
@@ -468,5 +468,9 @@ function page6() {
 document.addEventListener("DOMContentLoaded", function(){
     page0()
 });
+
+function unCheck() {
+    document.getElementById("mob-menu-checkbox").checked = false;
+}
 
 

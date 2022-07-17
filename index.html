@@ -8,36 +8,55 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/favi2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-top">
-            <h3>Web Developer</h3>
-        </div>
-        <div class="meniu-container">
-            <ul class="meniu">
-                <a onclick="page0()" href="#home"><img class="svg" src="img/svg/home.svg" alt="" /><li>Pradžia</li></a>
-                <a onclick="page0()" href="#portfolio"><img class="svg" src="img/svg/portfolio.svg" alt="" /><li>Portfolio</li></a>
-                <a onclick="page0()" href="#experience"><img class="svg" src="img/svg/experience.svg" alt="" /><li>Patirtis</li></a>
-                <a onclick="page0()" href="#about"><img class="svg" src="img/svg/human.svg" alt="" /><li>Apie mane</li></a>
-                <a onclick="page0()" href="#contact"><img class="svg custom" src="img/svg/contact.svg" alt="" /><li>Kontaktai</li></a>
-            </ul>
-        </div>
-        <div class="nav-bottom">
-            <p><b>Viktoras Šimkevičius</b></p>
-            <a href="mailto:simkevicius.viktoras@gmail.com">
-                <p class="nav-contacts">simkevicius.viktoras@gmail.com</p>
-            </a>
-            <a href="tel:+37062469512">
-                <p class="nav-contacts">+370 624 69512</p>
-            </a>
-            
+    <nav role="navigation" class="mob-nav-container">
+        <div id="menuToggle">
+        <input type="checkbox" id="mob-menu-checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+        <ul id="menu">
+        <a onclick="page0(); unCheck()" href="#home"><img class="svg" src="img/svg/home.svg" alt="" /><li>Pradžia</li></a>
+        <a onclick="page0(); unCheck()" href="#portfolio"><img class="svg" src="img/svg/portfolio.svg" alt="" /><li>Portfolio</li></a>
+        <a onclick="page0(); unCheck()" href="#experience"><img class="svg" src="img/svg/experience.svg" alt="" /><li>Patirtis</li></a>
+        <a onclick="page0(); unCheck()" href="#about"><img class="svg" src="img/svg/human.svg" alt="" /><li>Apie mane</li></a>
+        <a onclick="page0(); unCheck()" href="#contact"><img class="svg custom" src="img/svg/contact.svg" alt="" /><li>Kontaktai</li></a>
+        </ul>
         </div>
     </nav>
-    <div class="nav-spacer"></div>
-    <div class="content" id="content">
-       
-    </div>
+    <div class="desktop-body">
+        <nav class="desktop-navigation">
+            <div class="nav-top">
+                <h3>Web Developer</h3>
+            </div>
+            <div class="meniu-container">
+                <ul class="meniu">
+                    <a onclick="page0()" href="#home"><img class="svg" src="img/svg/home.svg" alt="" /><li>Pradžia</li></a>
+                    <a onclick="page0()" href="#portfolio"><img class="svg" src="img/svg/portfolio.svg" alt="" /><li>Portfolio</li></a>
+                    <a onclick="page0()" href="#experience"><img class="svg" src="img/svg/experience.svg" alt="" /><li>Patirtis</li></a>
+                    <a onclick="page0()" href="#about"><img class="svg" src="img/svg/human.svg" alt="" /><li>Apie mane</li></a>
+                    <a onclick="page0()" href="#contact"><img class="svg custom" src="img/svg/contact.svg" alt="" /><li>Kontaktai</li></a>
+                </ul>
+            </div>
+            <div class="nav-bottom">
+                <p><b>Viktoras Šimkevičius</b></p>
+                <a href="mailto:simkevicius.viktoras@gmail.com">
+                    <p class="nav-contacts">simkevicius.viktoras@gmail.com</p>
+                </a>
+                <a href="tel:+37062469512">
+                    <p class="nav-contacts">+370 624 69512</p>
+                </a>
+                
+            </div>
+        </nav>
+        <div class="nav-spacer"></div>
+        <div class="content" id="content">
+           
+        </div>
+    </div>      
+    
 </body>
 </html>
 
